@@ -1,0 +1,130 @@
+@import "/style/iconfont";
+@import "../../style/main.wxss";
+@import "../../style/icon.wxss";
+.icon-cart:before {
+  content: "\e6e0";
+}
+.icon-del:before {
+  content: "\e6ae";
+}
+.cart{
+  font-size: 100rpx;
+}
+.icon{
+  background: rgb(182, 181, 181);
+  color: #fff;
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  margin: 40rpx auto 20rpx;
+  align-items: center;
+  border-radius: 50%;
+}
+.cartname .goods_cart .tip{
+  text-align: center;
+}
+.cartname .goods_cart .tohome{
+  width: 70vw;
+  background: #f40;
+  height: 80rpx;
+  border-radius: 10rpx;
+  margin: 20rpx auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.cartname .goods_list{
+  margin-top: 20rpx;
+}
+.cartname .goods_list .row{
+  position: relative;
+}
+.cartname .goods_list .row .item{
+  transition: all 0.4s;
+  width: 100vw;
+  padding: 20rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 3rpx solid #ddd;
+}
+.cartname .goods_list .row .item .pic{
+  display: block;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 120rpx;
+}
+.cartname .goods_list .title,
+.cartname .goods_list .right .price{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 34rpx;
+}
+.cartname .goods_list .right{
+  position: absolute;
+  right: 40rpx;
+}
+.cartname .goods_list .right .price{
+  color: #d83316;
+}
+.cartname .goods_list .right .bei{
+  margin: 0 10rpx;
+}
+.cartname .goods_list .footer{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100rpx;
+  background: #fff;
+}
+.cartname .goods_list .footer .footer_left{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  height: 100%;
+}
+.cartname .goods_list .footer .footer_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 25vw;
+  font-size: 32rpx;
+  height: 100%;
+  background: #d83316;
+}
+.cartname .goods_list .footer .footer_left .all{
+  margin-left: 20rpx;
+}
+.cartname .goods_list .row .del{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100rpx;
+  transition: all 0.4s;
+  background: #E8595B;
+  transform: translateX(100%);
+  height: 160rpx;
+  border-bottom: 2rpx solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartname .goods_list .row .del.i{
+  transform: translateX(0);
+}
+.cartname .goods_list .row .item.i{
+  transform: translateX(-100rpx);
+}
+.cartname .goods_list .row .del .del-btn{
+  color: #fff;
+  font-size: 60rpx;
+}

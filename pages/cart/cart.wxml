@@ -1,0 +1,37 @@
+<view class="cartname">
+  <view wx:if="{{hasGoods}}" class="goods_cart">
+    <view class="icon"><text class="cart iconfont icon-cart"></text></view>
+    <view class="tip">购物车还是空的</view>
+    <view class="tohome">到商城逛逛</view>
+  </view>
+  <view class="goods_list" wx:else>
+    <block wx:for="{{goodsOrder}}" wx:key="item.goodsId">
+    <view class="row">
+      <view bindtap="hasSelect" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" data-index="{{index}}" class="item {{item.del == 'active' ?'i':''}}">
+        <checkbox bindtap="statusBtn" class="round red" checked="{{item.select}}" data-index="{{index}}"></checkbox>
+        <image class="pic" src="{{item.posterUrl}}"></image>
+        <text class="title">{{item.title}}</text>
+        <view class="right">
+          <text class="count">{{item.count}}</text>
+          <text class="bei">X</text>
+          <text class="price">{{item.price}}</text>
+        </view>
+      </view>
+      <view bindtap="delGoods" data-index="{{index}}" class="del {{item.del == 'active' ?'i':''}}"><text class="iconfont icon-del del-btn"></text></view>
+    </view>
+    </block>
+    <view class="footer">
+      <view class="footer_left">
+        <view class="left_count">
+          <checkbox bindtap="allStatus" class="round red" checked="{{allSelect}}"></checkbox>
+          <text class="all">全选</text>
+        </view>
+        <view class="right_price">
+          <text>合计：</text>
+          <text class="price">{{total}}元</text>
+        </view>
+      </view>
+      <view class="footer_right" bindtap="toBuy">结算({{orderNum}})</view>
+    </view>
+  </view>
+</view>

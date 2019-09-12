@@ -1,0 +1,6 @@
+<view class="search-head">
+  <input type="text" bindinput="bindKeyInput" placeholder="搜索商品" maxlength="20" confirm-type="search" value="{{inputValue}}"></input>
+  <text class="iconfont icon-search icon-left"></text>
+  <text wx:if="{{inputValue != ''}}" bindtap="close" class="iconfont icon-close icon-right"></text>
+  <view class="btn" bindtap="search">搜索</view>
+</view>

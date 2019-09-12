@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="status-box">
+    <view bindtap="statusTap" class="status-label {{index == currentType ? 'active' : ''}}" wx:for-items="{{statusType}}" wx:key="{{index}}" data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="goods-list">
+  <block wx:for="{{goodsListData}}" wx:key="index">
+    <view wx:if="{{item.currentType === currentType}}" class="goods-item">
+      <view class="top">
+        <image src="{{item.pic}}"></image>
+        <view class="goods-dec">
+          <view class="name">
+            <view class="dec-title">{{item.title}}</view>
+            <view class="dec-info">{{item.info}}</view>
+          </view>
+          <view class="price">
+            <view>￥{{item.price}}</view>
+            <view>x{{item.count}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view wx:if="{{item.currentType === 0}}">取消订单</view>
+        <view wx:if="{{item.currentType === 2}}">查看物流</view>
+        <view wx:if="{{item.currentType === 2}}">确认收货</view>
+        <view wx:if="{{item.currentType === 1}}">提醒发货</view>
+        <view wx:if="{{item.currentType === 4}}">删除订单</view>
+        <view wx:if="{{item.currentType === 1 || item.currentType === 4}}">查看订单</view>
+        <view wx:if="{{item.currentType === 0}}">立即付款</view>
+        <view wx:if="{{item.currentType === 3}}">评价</view>
+      </view>
+    </view>
+    </block>
+  </view>
+  
+</view>

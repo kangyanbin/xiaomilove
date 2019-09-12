@@ -1,0 +1,39 @@
+<view class="search">
+  <search-head inputValue="{{inputValue}}" bindsearch="search"></search-head>
+  <view class="hot">
+    <view class="title">热门搜索</view>
+    <view class="hotgoods">
+      <view class="options">黑鲨手机新品</view>
+      <view class="options">游戏本2019新款</view>
+      <view class="options">米家榨汁机</view>
+      <view class="options">小米CC9</view>
+      <view class="options">黑鲨手机2</view>
+    </view>
+  </view>
+  <view class="hotClassify">
+    <view class="title">常用分类</view>
+    <view class="list">
+      <view class="item" bindtap="toList" data-key="手机">手机</view>
+      <view class="item" bindtap="toList" data-key="电视">电视</view>
+      <view class="item" bindtap="toList" data-key="笔记本">笔记本</view>
+      <view class="item" bindtap="toList" data-key="盒子">盒子</view>
+      <view class="item" bindtap="toList" data-key="路由器">路由器</view>
+    </view>
+    <view class="list">
+      <view class="item">平板</view>
+      <view class="item">手表</view>
+      <view class="item">投影</view>
+      <view class="item">VR</view>
+      <view class="item">穿戴</view>
+    </view>
+  </view>
+  <view class="search-history" wx:if="{{isShowHistory}}">
+    <view class="history-title">搜索历史</view>
+    <view class="content">
+      <block wx:for="{{historyData}}" wx:key="index">
+        <view class="key">{{item}}</view>
+      </block>
+      <view class="clearbtn" bindtap="clear">清空历史记录</view>
+    </view>
+  </view>
+</view>

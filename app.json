@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classic/classic",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/order/search",
+    "components/banner/banner",
+    "pages/details/details",
+    "pages/list/list",
+    "pages/order-list/order-list",
+    "pages/coupon/coupon",
+    "pages/members/members",
+    "pages/set/set",
+    "pages/set/about",
+    "pages/set/services",
+    "pages/payorder/payorder",
+    "pages/channel/channel"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D83317",
+    "navigationBarTitleText": "小米love",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#D83317",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tabBar/home.png",
+        "selectedIconPath": "image/tabBar/home_active.png"
+      },
+      {
+        "pagePath": "pages/classic/classic",
+        "text": "分类",
+        "iconPath": "image/tabBar/classic.png",
+        "selectedIconPath": "image/tabBar/classic_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "image/tabBar/cart.png",
+        "selectedIconPath": "image/tabBar/cart_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "image/tabBar/me.png",
+        "selectedIconPath": "image/tabBar/me_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,22 @@
+<view class="channel">
+  <banner wx:if="{{channelData.bannerUrl}}" bannerUrl="{{channelData.bannerUrl}}"></banner>
+  <view wx:if="{{channelData.header}}" class="header">
+    <view class="imgs">
+    <image src="{{channelData.header.poster_url}}"></image></view>
+    <view class="info">
+      <view class="top">
+        <view class="name">{{channelData.header.title}} </view>
+        <view class="price">￥{{channelData.header.price}}起</view>
+      </view>
+      <view class="bottom">
+        <view class="msg">{{channelData.header.description}} </view>
+        <view class="buybtn" bindtap="toDetail" data-id="{{channelData.header.product_id}}" data-poster="{{channelData.header.poster_url}}">立即购买</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{channelData.goodsdata}}" class="goods">
+    <block wx:for="{{channelData.goodsdata}}" wx:key="index">
+      <goods item="{{item}}" bind:tap="toDetail" data-id="{{item.product_id}}" data-poster="{{item.poster_url}}"></goods>
+    </block>
+  </view>
+</view>

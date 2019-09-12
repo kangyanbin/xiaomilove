@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "banner": "/components/banner/banner",
+    "goods": "/components/goods/goods",
+    "loding": "/components/loding/loding"
+  },
+  "onReachBottomDistance":50
+}

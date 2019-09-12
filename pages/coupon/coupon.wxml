@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="nav-bar">
+    <view bindtap="navBtn" class="nav-item {{index == currentType ? 'active' : ''}}" wx:for-items="{{nav}}" wx:key="{{index}}" data-index="{{index}}" >{{item}}</view>
+  </view>
+  <view class="content" wx:for-items="{{couponData}}" wx:key="{{index}}" wx:if="{{item.status === currentType}}">
+    <view class="box">
+      <view class="topdot"></view>
+      <view class="bottomdot"></view>
+      <view class="line"></view>
+      <view class="left">
+        <image mode="aspectFit" src="{{item.status === 0 ? '/image/coupon.png':'/image/nocoupon.png'}}" mode="widthFix"></image>
+        <view class="money">￥{{item.money}}</view>
+      </view>
+      <view class="right {{item.status === 1 ? 'no':''}}">
+        <view class="box-title">{{item.name}}</view>
+        <view class="box-date">{{item.time_range}}</view>
+        <view class="tobuy">{{item.status === 0 ? '去使用':'已过期'}}</view>
+      </view>
+    </view>
+    <view class="dec {{item.status === 1 ? 'no':''}}">{{item.range_desc}}</view>
+  </view>
+</view>

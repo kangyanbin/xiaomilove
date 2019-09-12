@@ -1,0 +1,57 @@
+<view class="list">
+  <search-head inputValue="{{inputValue}}" bindsearch="tosearch"></search-head>
+  <view class="nav">
+    <view class="item {{navSelect === 'promotion'?'active':''}}" bindtap="promotionBtn">综合<text class="icon icon-down promotion"></text></view>
+    <view class="item {{navSelect === 'sales'?'active':''}}" bindtap="salesBtn">销量</view>
+    <view class="item {{navSelect === 'price'?'active':''}}" bindtap="priceBtn">价格
+      <text class="sp">
+        <text class="icon icon-down {{priceSelect === 'lower'?'lower':''}}"></text>
+        <text class="icon icon-up {{priceSelect === 'high'?'high':''}}"></text>
+      </text>
+    </view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="index">
+    <view wx:if="{{item.view_type === 'view_search_product'}}" bindtap="toDetail" class="item-box" data-id="{{item.body.product_id}}" data-poster="{{item.body.image}}">
+      <image src="{{item.body.image}}"></image>
+      <view class="item-con">
+        <view class="title">{{item.body.name}}</view>
+        <view class="item-desc">
+          <text class="red">{{item.body.desc_red}}</text>
+          {{item.body.desc}}</view>
+        <view class="item-price">
+          <text class="spe">¥</text>
+          <text>{{item.body.price}}</text>
+          <text class="spe">起</text>
+        </view>
+        <view class="item-count">
+          <text>{{item.body.comments_total}}条评价</text>
+          <text> {{item.body.satisfy_per}}满意</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view wx:if="{{listData.length === 0}}" class="goods_search">
+    <view class="i"><text class="search iconfont icon-search"></text></view>
+    <view class="tip">没有找到商品，换个词搜搜吧</view>
+  </view>
+  <!-- <block wx:for="{{listData}}" wx:key="index">
+    <view wx:if="{{item.view_type === 'view_search_product'}}" class="item-box">
+      <image src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f3a268be8faa0b372ccdc1a26ced674e.jpg"></image>
+      <view class="item-con">
+        <view class="title">黑鲨手机2 Pro</view>
+        <view class="item-desc">
+          <text class="red">「8月7日10点再次开售，可选+100元得游戏手柄」</text>
+          骁龙855 Plus旗舰处理器 / UFS 3.0 高速闪存 / 全系标配12GB大运存 / 液冷3.0+，全域液冷升级 / 电竞级屏幕压感，操作快人一步 / 独显DC调光2.0 护眼全新升级</view>
+        <view class="item-price">
+          <text class="spe">¥</text>
+          <text>2999</text>
+          <text class="spe">起</text>
+        </view>
+        <view class="item-count">
+          <text>644条评价</text>
+          <text> 98.1%满意</text>
+        </view>
+      </view>
+    </view>
+  </block> -->
+</view>

@@ -1,0 +1,87 @@
+@import "/style/iconfont";
+.icon-jiadian-copy{
+  color: #AA3ACC;
+}
+.icon-dianshi-copy-copy{
+  color: rgb(245, 234, 32);
+}
+.icon-iconziti28-copy{
+  color: #FA5E35;
+}
+.icon-diannao-copy{
+  color: #1296DB;
+}
+.icon-shouji-copy{
+  color: #AA3ACC;
+}
+.icon-jiadian-copy:before {
+  content: "\e72c";
+}
+.icon-dianshi-copy-copy:before {
+  content: "\e72a";
+}
+.icon-iconziti28-copy:before {
+  content: "\e72b";
+}
+.icon-diannao-copy:before {
+  content: "\e727";
+}
+.icon-shouji-copy:before {
+  content: "\e728";
+}
+.icon-search:before {
+  content: "\e653";
+}
+.search{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color:#D83317;
+}
+.search input{
+  width: 96%;
+  border-radius: 20rpx;
+  border: 2rpx solid #fff;
+  background-color: #fff;
+}
+.search text{
+  position: absolute;
+  color: #7f7f7f;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.nav{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  border-bottom: 6rpx solid #ddd;
+}
+.nav .nav-item{
+  box-sizing: border-box;
+  padding: 20rpx;
+  width: 25%;
+  text-align: center;
+}
+.nav .nav-item .nav-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+}
+.icon{
+  font-size: 60rpx !important;
+}
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #ddd;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}

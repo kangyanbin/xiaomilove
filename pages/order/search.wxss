@@ -1,0 +1,84 @@
+@import "/style/iconfont";
+.icon-search:before {
+  content: "\e653";
+}
+.icon-close:before {
+  content: "\e643";
+}
+.search{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(241, 236, 236);
+}
+/* .icon-left{
+  position: absolute;
+  left: 30rpx;
+  top:34rpx;
+}
+.icon-right{
+  position: absolute;
+  right: 120rpx;
+  top:34rpx;
+} */
+.search .hot,
+.search .hotClassify,
+.search .search-history{
+  width: 100vw;
+}
+.title{
+  width: 100%;
+  padding: 10rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.search .hot .hotgoods{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.search .hot .hotgoods .options{
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 24rpx;
+}
+.search .hotClassify .list{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.search .hotClassify .list .item{
+  width: 120rpx;
+  background: rgba(109, 6, 6, 0.081);
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.search .search-history .history-title{
+  width: 100%;
+  padding: 10rpx;
+  font-size: 24rpx;
+  color: rgb(100, 100, 100);
+}
+.search .search-history .content{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.search .search-history .content .key{
+  border-bottom: 2rpx solid #ddd;
+  padding: 14rpx 0;
+}
+.search .search-history .content .clearbtn{
+  width: 100%;
+  padding: 14rpx 0;
+  text-align: center;
+  color: #2177C7;
+}

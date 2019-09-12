@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="search" bindtap="searchBtn">
+    <input type="text" disabled></input>
+    <text class="iconfont icon-search">搜索商品</text>
+  </view>
+  <banner bannerUrl="{{bannerUrl}}"></banner>
+  <view class="nav">
+    <view class="nav-item" bindtap="toChannel" data-name="手机">
+      <view class="nav-icon"><text class="iconfont icon-shouji-copy icon"></text></view>
+      <text class="nav-text">手机</text>
+    </view>
+    <view class="nav-item" bindtap="toChannel" data-name="电视">
+      <view class="nav-icon"><text class="iconfont icon-dianshi-copy-copy icon"></text></view>
+      <text class="nav-text">电视</text>
+    </view>
+    <view class="nav-item" bindtap="toChannel" data-name="电脑">
+      <view class="nav-icon"><text class="iconfont icon-diannao-copy icon"></text></view>
+      <text class="nav-text">电脑</text>
+    </view>
+    <view class="nav-item" bindtap="toChannel" data-name="智能">
+      <view class="nav-icon"><text class="iconfont icon-iconziti28-copy icon"></text></view>
+      <text class="nav-text">智能</text>
+    </view>
+    <view class="nav-item" bindtap="toChannel" data-name="家电">
+      <view class="nav-icon"><text class="iconfont icon-jiadian-copy icon"></text></view>
+      <text class="nav-text">家电</text>
+    </view>
+  </view>
+  <view class="goods">
+    <block wx:for="{{goodsData}}" wx:key="item.id">
+      <goods item="{{item}}" bind:tap="toDetail" data-id="{{item.product_id}}" data-poster="{{item.poster_url}}"></goods>
+    </block>
+  </view>
+  <loding isLoad="{{isLoad}}" flag="{{flag}}"></loding>
+</view>

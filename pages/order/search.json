@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-head": "/components/search-head/search-head"
+  },
+  "navigationBarTitleText": "搜索页面"
+}

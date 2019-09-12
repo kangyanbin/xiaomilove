@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="content">
+    <view bindtap="toServices">服务协议</view>
+    <view bindtap="toAbout">关于我们</view>
+  </view>
+</view>

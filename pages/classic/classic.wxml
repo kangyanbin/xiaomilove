@@ -1,0 +1,24 @@
+<view class="menu">
+    <scroll-view scroll-y="true" class="top-nav-left" bindtap="nav">
+      <block wx:for="{{classicData}}" wx:key="index">
+        <view data-name="m{{index+1}}" class="top-btn {{toView === 'm'+(index+1) ? 'active' : ''}}">{{item.category_name}}</view>
+      </block>
+    </scroll-view>
+    <scroll-view scroll-y class="top-nav-right" scroll-into-view="{{toView}}">
+      <block wx:for="{{classicData}}" wx:key="index">
+        <view id="m{{index+1}}" class="xm">
+          <block wx:for="{{item.category_list}}" wx:for-item="key" wx:key="index">
+            <view class="title" wx:if="{{key.view_type === 'category_title'}}"><text>{{key.body.category_name}}</text></view>
+            <view class="box" wx:if="{{key.view_type === 'category_group'}}">
+              <block wx:for="{{key.body.items}}" wx:for-item="box" wx:key="index">
+                <view class="product">
+                  <image src="{{box.img_url}}"></image>
+                  <view class="name">{{box.product_name}}</view>
+                </view>
+              </block>
+            </view>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+</view>

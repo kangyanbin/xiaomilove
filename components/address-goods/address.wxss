@@ -1,0 +1,19 @@
+.addres{
+  box-sizing: border-box;
+  padding: 30rpx;
+  width: 100%;
+  border-top:20rpx solid #ddd;
+  border-bottom:20rpx solid #ddd;
+}
+.addres .row{
+  margin-left: 20rpx;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #ddd;
+}
+.addres .row .tip{
+  color: rgb(155, 155, 155);
+  font-size: 24rpx;
+}
+.addres .row .value{
+  margin-left: 30rpx;
+}

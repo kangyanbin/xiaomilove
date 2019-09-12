@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "address":"/components/address-goods/address",
+    "goods": "/components/goods/goods"
+  },
+  "navigationBarTitleText": "商品详情"
+}

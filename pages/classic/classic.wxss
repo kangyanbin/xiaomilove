@@ -1,0 +1,86 @@
+.menu{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+.menu .top-nav-left{
+    width: 22vw;
+    height: 100vh;
+    border:#eee solid 1px;
+}
+.menu .top-nav-right{
+  width: 78vw;
+  height: 100vh;
+}
+.menu .top-nav-left .top-btn{
+    padding: 22rpx 0;
+    text-align: center;
+    font-size: 16px;
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.active{
+  color: red;
+}
+.menu .top-nav-right .xm{
+  width: 100%;
+  overflow: hidden;
+}
+.menu .top-nav-right .xm .title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.menu .top-nav-right .xm .title text{
+  position: relative;
+}
+.menu .top-nav-right .xm .title text::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40rpx;
+  border-top: 1px solid #e0e0e0;
+  transform: translate3d(-150%,-50%,0);
+}
+.menu .top-nav-right .xm .title text::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40rpx;
+  border-top: 1px solid #e0e0e0;
+  left: auto;
+  right: 0;
+  transform: translate3d(150%,-50%,0);
+}
+.menu .top-nav-right .xm .box{
+  width: 100%;
+  overflow: hidden;
+}
+.menu .top-nav-right .xm .box .product{
+  float: left;
+  width: 33.333333333333336%;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+}
+.menu .top-nav-right .xm .box .product image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.menu .top-nav-right .xm .box .product .name{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: rgba(0,0,0,.54);
+}

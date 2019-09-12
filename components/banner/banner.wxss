@@ -1,0 +1,11 @@
+/* components/banner/banner.wxss */
+swiper{
+  height: 350rpx;
+  overflow: hidden;
+}
+.imgs{
+  width: 100%;
+}
+.imgs image{
+  width: 100%;
+}

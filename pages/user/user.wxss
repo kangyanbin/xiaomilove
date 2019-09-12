@@ -1,0 +1,84 @@
+@import "/style/iconfont";
+.icon-youhuijuan:before {
+  content: "\e642";
+}
+.icon-dingdan:before {
+  content: "\e602";
+}
+.icon-huiyuan:before {
+  content: "\e612";
+}
+.icon-shezhi:before {
+  content: "\e66f";
+}
+.icon-kefu:before {
+  content: "\e8cc";
+}
+.icon-youhuijuan{
+  color: #51BBE0;
+}
+.icon-dingdan{
+  color: #F96C5E;
+}
+.icon-huiyuan{
+  color: #FDBF2D;
+}
+.icon-shezhi{
+  color: #818C99;
+}
+.icon-kefu{
+  color: #00B26A;
+}
+.user{
+  width: 100vw;
+  height: 100vh;
+  background: #ddd;
+}
+.user .header{
+  border-top: 10rpx solid #ddd;
+  width: 100vw;
+  height: 150rpx;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.user .header image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 20rpx;
+}
+.user .content,
+.user .footer{
+  width: 100vw;
+  border-top: 10rpx solid #ddd;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding:0 20rpx;
+  border-bottom: 2rpx solid #ddd;
+  width: 100%;
+  height: 100rpx;
+}
+.content view:last-child,
+.footer view:last-child{
+  border-bottom-color: #fff;
+}
+.icon{
+  margin: 0 14rpx;
+}
+.kefu{
+  border-radius: 0;
+  font-size: 32rpx;
+  background: #fff;
+  text-align: left;
+}
+/* 去掉button按钮默认边框 */
+button::after {
+  border: none;
+}

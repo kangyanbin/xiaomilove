@@ -1,0 +1,41 @@
+@import "/style/iconfont";
+.icon-cart:before {
+  content: "\e6e0";
+}
+.good{
+  width: 49vw;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 6rpx solid #ddd;
+}
+.good image{
+  width: 100%;
+}
+.good .title,
+.good .info{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.good .title{
+  font-size: 34rpx;
+  line-height: 1;
+}
+.good .info{
+  color: rgb(99, 95, 95);
+}
+.good .price-cart{
+  box-sizing: border-box;
+  padding-right: 16rpx;
+  margin-top: 16rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.good .price-cart .price{
+  font-weight: 700;
+  color: #D83316;
+}
+.good .price-cart .cart{
+  font-size:44rpx;
+}

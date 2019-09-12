@@ -1,0 +1,59 @@
+.channel{
+  background: rgb(230, 231, 251);
+  width: 100vw;
+  height: 100vh;
+}
+.header{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10rpx;
+  overflow: hidden;
+}
+.header .imgs image{
+  width: 100%;
+  display: block;
+}
+.info{
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  width: 100%;
+}
+.info .top,
+.info .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info .top .price{
+  color: #ea625b;
+  white-space: nowrap;
+}
+.info .bottom .msg{
+  font-size: 24rpx;
+  color: rgba(0,0,0,.54);
+}
+.info .bottom .buybtn{
+  font-size: 26rpx;
+  color: #fff;
+  font-weight: bold;
+  width: 20vw;
+  text-align: center;
+  padding: 10rpx 0;
+  background-color: #ea625b;
+  border-radius: 5rpx;
+}
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #ddd;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}

@@ -1,0 +1,30 @@
+.container{
+  height: 100vh;
+  /* background: #FE756A; */
+}
+.container .user{
+  width: 100vw;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FE756A;
+}
+.container .user .avatar{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .center{
+  width: 100vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+}
+.container .center view{
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2rpx solid #000;
+}

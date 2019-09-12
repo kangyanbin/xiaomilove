@@ -1,0 +1,139 @@
+@import "/style/iconfont";
+.icon-cart:before {
+  content: "\e6e0";
+}
+.container{
+  margin-bottom: 100rpx;
+}
+swiper{
+  height: 60vh;
+  width: 100vw;
+}
+.imgs{
+  width: 100%;
+  height: 100%;
+}
+.imgs image,
+.imgs video{
+  width: 100%;
+  height: 100%;
+}
+.container .content{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30rpx 40rpx;
+}
+.container .content .title{
+  font-size: 40rpx;
+}
+.container .content .desc{
+  font-size: 24rpx;
+  color: rgb(148, 148, 148);
+  margin: 10rpx 0;
+}
+.container .content .price{
+  font-size: 40rpx;
+  color: #d83316;
+}
+.container .tab-header{
+  display: flex;
+  width: 100vw;
+  border-bottom:2rpx solid #ddd;
+}
+.container .tab-header .flex{
+  position: relative;
+  display: flex;
+  padding: 16rpx 0;
+  justify-content: center;
+  width: 50%;
+}
+.on::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25rpx;
+  display: block;
+  width: 50rpx;
+  height: 5rpx;
+  border-radius: 10rpx;
+  background: #ff6700;
+}
+.on{
+  color: #ff6700;
+}
+.container .products{
+  width: 100%;
+}
+.container .products image{
+  width: 100%;
+  display: block;
+}
+.container .love{
+  width: 100vw;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-top:10rpx solid #ddd;
+  border-bottom:4rpx solid #ddd;
+}
+.container .lovegoods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #ddd;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}
+.tobuy{
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100rpx;
+  
+  color: #fff;
+}
+.tobuy .icon{
+  position: relative;
+  border-top: 2rpx solid rgb(83, 83, 83);
+  display: flex;
+  background: #ddd;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  width: 14vw;
+}
+.tobuy .icon .count{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  background: #d83316;
+  color: #fff;
+  border-radius: 50%;
+  left: 55%;
+  top: 20%;
+}
+.tobuy .icon .cart{
+  font-size: 56rpx;
+}
+.tobuy .addcart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f40;
+  width: 43vw;
+}
+.tobuy .buy{
+  display: flex;
+  justify-content: center;
+  background: #d83316;
+  align-items: center;
+  width: 43vw;
+}

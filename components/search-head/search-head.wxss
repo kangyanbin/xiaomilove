@@ -1,0 +1,40 @@
+@import "/style/iconfont";
+.icon-search:before {
+  content: "\e653";
+}
+.icon-close:before {
+  content: "\e643";
+}
+.search-head{
+  background-color:rgb(241, 236, 236);
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+ 
+}
+.search-head input{
+  width: 73%;
+  border-radius: 20rpx;
+  padding-right: 50rpx;
+  padding-left: 50rpx;
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+  background-color: #fff;
+}
+.search-head .btn{
+  color: rgb(100, 100, 100);
+}
+.icon-left{
+  position: absolute;
+  left: 30rpx;
+  top:34rpx;
+}
+.icon-right{
+  position: absolute;
+  right: 120rpx;
+  top:34rpx;
+}

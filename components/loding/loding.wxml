@@ -1,0 +1,1 @@
+<view wx:if="{{flag}}" class="cu-load {{!isLoad?'loading':'over'}}"></view>
